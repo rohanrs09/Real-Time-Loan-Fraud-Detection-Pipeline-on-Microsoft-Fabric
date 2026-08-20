@@ -9,7 +9,7 @@ Built entirely on **Microsoft Fabric** — no external Azure subscription requir
 
 ## Architecture
 
-![Architecture](./SS/image-6.png)
+![Architecture](./SS/loan_fraud_monitor.png)
 <img src="./SS/Workspace_e2e_loan.png" alt="Workspace" width="700"/>
 
 **Flow:** Mobile Apps / Websites → Fabric Eventstream (Custom App source) → EventStream → EventHouse (KQL Database, real-time fraud detection) → SQL Database → Dashboards. In parallel: KQL Database → Lakehouse → Medallion layers (Bronze = Raw Events, Silver = Enriched Features, Gold = Fraud Decisions).
